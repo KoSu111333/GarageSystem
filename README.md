@@ -41,43 +41,6 @@
 
 
 
-#### **상태 명령어**
-
-HW Layer -> Seq Layer로 보내는 상태 타입
-
-차량 감지, 게이트 오픈 등 HW Layer를 감시하고 상태가 변화하면 이를 Seq Cont에게 보고한다.
-
-| **타입**                   | **value(16)** | **설명**                          |
-| -------------------------- | ------------- | --------------------------------- |
-| **STATUS_SYSTEM_STARTUP**  | 0x19          | Stm32 시작 대기 상태              |
-| **STATUS_SYSTEM_IDLE**     | 20            | 아무런 상태 X                     |
-| **STATUS_VEHICLE_DETECTE** | 21            | 차량이 감지 된 상태               |
-| **STATUS_GATE_OPEN**       | 22            | 게이트가 열려있는 상태            |
-| **STATUS_GATE_CLOSED**     | 23            | 게이트가 닫혀있는 상태            |
-| **STATUS_VEHICLE_LEFT**    | 24            | 차량이 Left 한 상태               |
-| **STATUS_DISPLAY_PAYMENT** | 25            | 정산 정보 표시 상태               |
-| **STATUS_DISPLAY_PAYMENT** | 26            | 정산 정보 표시 상태               |
-| **STATUS_DISPLAY_PAYMENT** | 27            | 정산 정보 표시 상태               |
-| **STATUS_VEHICLE_PASSED**  | 28            | Gate Open 이후 차량이 지나간 상태 |
-| **STATUS_ERROR_CODE**      | FF            | Error가 발생했다는 상태           |
-
-
-
-#### **커맨드 명령어**
-
-Seq Layer -> HW Layer 로 보내는 명령어 타입
-
-| **타입**                     | **Value** | **설명**                                                   |
-| ---------------------------- | --------- | ---------------------------------------------------------- |
-| **CMD_GATE_OPEN**            | **0x11**  | 게이트 OPEN을 위한 명령어 타입                             |
-| **CMD_GATE_CLOSE**           | **0x11**  | 게이트 CLOSE를 위한 명령어 타입                            |
-| **CMD_DISPLAY_PAYMENT_INFO** | **0x12**  | 출차 차량 정산 정보를 LCD 화면에 표시하기 위한 명령어 타입 |
-| **CMD_DISPLAY_PAYMENT_DONE** | **0x13**  | 출차 차량 정산 완료를 LCD 화면에 표시하기 위한 명령어 타입 |
-| **CMD_DISPLAY_PAYMENT_FAIL** | **0x14**  | 출차 차량 정산 실패를 LCD 화면에 표시하기 위한 명령어 타입 |
-| **CMD_REQUEST_STM32_STATUS** | **0x15**  |                                                            |
-| **CMD_RESET**                | **0x16**  | STM보드의 시스템을 리셋하기 위한 명령어 타입               |
-
-
 
 **(2) jetson Nano <-> rust Server**
 
