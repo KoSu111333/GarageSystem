@@ -10,10 +10,10 @@
 
 
 
-| **Board**   | **Compiler**  | **Sensor**                           |      |
-| ----------- | ------------- | ------------------------------------ | ---- |
-| STM32F103Rb | Arm-none-eabi | Servo-Motor, Sonar sensor, LCD(1604) |      |
-| Jetson Nano | Pytohn        | Camera Module                        |      |
+| **Board**   | **Compiler**  | **Sensor**                           |
+| ----------- | ------------- | ------------------------------------ |
+| STM32F103Rb | Arm-none-eabi | Servo-Motor, Sonar sensor, LCD(1604) |   
+| Jetson Nano | Pytohn        | Camera Module                        |    
 
 
 
