@@ -98,7 +98,7 @@ Seq Layer -> HW Layer 로 보내는 명령어 타입
 
 #### **요청/상태 보고 (Jetson → 서버)**
 
-- **TOPIC : parking/request/ocr****
+- **TOPIC : parking/request/ocr**
   - 목적: Jetson이 차량 감지 후 서버에 OCR 처리를 요청
   - JSON 페이로드 예시:
     
@@ -118,7 +118,7 @@ Seq Layer -> HW Layer 로 보내는 명령어 타입
 
 
 
-- **TOPIC : parking/request/feeInfo****
+- **TOPIC : parking/request/feeInfo**
   - 목적: 정산을 하기 위해 해당 번호판을 가지고 있는 데이터를 서버에 요청
   - JSON 페이로드 예시:
 
@@ -134,7 +134,7 @@ Seq Layer -> HW Layer 로 보내는 명령어 타입
 
 
 
-- **TOPIC : parking/request/StartUp****
+- **TOPIC : parking/request/StartUp**
   - JSON 페이로드 예시:
 
 ```json
@@ -149,7 +149,7 @@ Seq Layer -> HW Layer 로 보내는 명령어 타입
 
 #### **명령/응답 (서버 → Jetson)**
 
-- **TOPIC : parking/response/OCR****
+- **TOPIC : parking/response/OCR**
   - 목적: 서버가 Jetson의 OCR 요청에 대한 결과를 회신할 때 사용.
   - JSON 페이로드 예시:
 
@@ -174,7 +174,7 @@ Seq Layer -> HW Layer 로 보내는 명령어 타입
 
 
 
-- **TOPIC : parking/response/feeInfo****
+- **TOPIC : parking/response/feeInfo**
   - 목적: 서버가 Jetson의 정산 차량 정보 요청에 대한 결과를 회신할 때 사용.
   - JSON 페이로드 예시:
 
@@ -200,7 +200,7 @@ Seq Layer -> HW Layer 로 보내는 명령어 타입
 
 
 
-- **TOPIC : parking/response/feeResult****
+- **TOPIC : parking/response/feeResult**
   - 목적: 정산 결과 회신할 때 사용
   - JSON 페이로드 예시:
 
