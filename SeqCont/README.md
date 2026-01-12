@@ -1,2 +1,0 @@
-# SmartGarage-JSNN-
-temp
