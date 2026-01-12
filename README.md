@@ -10,14 +10,6 @@
 ### **2. 시스템 구성**
 
 
-
-| **Board**   | **Compiler**  | **Sensor**                           |
-| ----------- | ------------- | ------------------------------------ |
-| STM32F103Rb | Arm-none-eabi | Servo-Motor, Sonar sensor, LCD(1604) |   
-| Jetson Nano | Pytohn        | Camera Module                        |    
-
-
-
 ![image-20260112153248054](./readme_img/image-20260112153248054.png)
 
  
