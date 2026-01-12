@@ -1,5 +1,6 @@
 ### **주차장 시스템**
-
+**RUST SERVER**
+**--> https://github.com/wangki-kyu/ocr_server <--**
 ### **1. 개요**
 
    OCR을 통해서 번호판을 인식하고, 인식한 번호판을 통해서 DB 관리, 게이트 제어를 하는 주차장 구성
