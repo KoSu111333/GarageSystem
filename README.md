@@ -13,8 +13,10 @@
 ![image-20260112153248054](./readme_img/image-20260112153248054.png)
 
  
-
-![image-20260112153255202](./readme_img/image-20260112153255202.png)
+|    환경      |   compiler    |
+| ----------- | ------------  |
+| stm32f103rb | arm-none-eabi |
+| jetsonNano  | Python3.6     |
 
 #### **2.1. 시스템 모드**
 
